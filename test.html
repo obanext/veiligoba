@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBI Bots</title>
+    <style>
+        /* Basis reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Zorg dat de body de hele breedte van het scherm gebruikt */
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Zorg dat elementen goed schalen op kleinere schermen */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script id='obi-bots-launcher' src='https://cloudstatic.obi4wan.com/ngbots/obi-launcher.bundle.js'></script>
+    <script>
+        OBI.bots("33158f3d-15c1-4af8-aef4-89deb125a0a8");
+    </script>
+</body>
+</html>
